@@ -4,7 +4,7 @@ const express = require('express')
 const app = express();
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://student:smerfy13@cluster0.qg5uvqn.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://student:password@cluster0.qg5uvqn.mongodb.net/?retryWrites=true&w=majority')
 const db = mongoose.connection
 db.on('error',(error) => console.error(error))
 db.once('open',() => console.log('Połączono z bazą danych'))
